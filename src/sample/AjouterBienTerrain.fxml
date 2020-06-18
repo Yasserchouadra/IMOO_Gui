@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ajouterAppart" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AjouterBienTerrainController">
+    <children>
+        <Button layoutX="845.0" layoutY="530.0" mnemonicParsing="false" onAction="#creerBienTerrain" prefHeight="43.0" prefWidth="93.0" text="Créer" />
+        <Label layoutX="46.0" layoutY="22.0" text="Ajouter un Terrain">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Separator layoutX="59.0" layoutY="48.0" prefHeight="20.0" prefWidth="182.0" />
+        <VBox layoutX="96.0" layoutY="102.0" prefHeight="86.0" prefWidth="330.0">
+            <children>
+                <Label text="Propriétaire" />
+                <HBox prefHeight="25.0" prefWidth="270.0" spacing="15.0">
+                    <children>
+                        <ChoiceBox fx:id="propsChoiceBox" prefHeight="26.0" prefWidth="208.0" />
+                        <Button mnemonicParsing="false" onAction="#creerPropDialogBox" prefHeight="30.0" prefWidth="32.0">
+                            <graphic>
+                                <ImageView fx:id="plusIcon" fitHeight="15.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" />
+                            </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#refreshList" prefHeight="30.0" prefWidth="32.0">
+                     <graphic>
+                        <ImageView fx:id="reloadIcon" fitHeight="15.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                    </children>
+                </HBox>
+                <Label text="Transaction" />
+                <ChoiceBox fx:id="typeTransactionChoiceBox" prefHeight="26.0" prefWidth="207.0" />
+            </children>
+        </VBox>
+        <VBox layoutX="95.0" layoutY="224.0" prefHeight="314.0" prefWidth="209.0" spacing="7.0">
+            <children>
+                <Label text="Details">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            <Label text="Matricule" />
+                <TextField fx:id="matriculeTextField" prefHeight="26.0" prefWidth="165.0" promptText="125003225" />
+            <Label text="Adresse" />
+                <TextField fx:id="adresseTextField" prefHeight="26.0" prefWidth="165.0" promptText="Adresse" />
+            <Label text="Wilaya" />
+            <ChoiceBox fx:id="wilayasChoiceBox" prefHeight="26.0" prefWidth="222.0" />
+            <Label text="Superficie" />
+                <TextField fx:id="superficieTextField" prefHeight="26.0" prefWidth="165.0" promptText="300 (m²)" />
+            <Label text="Nombre de façades" />
+            <TextField fx:id="nbFacadeTextField" prefHeight="26.0" prefWidth="165.0" promptText="2, 3" />
+            </children>
+        </VBox>
+        <Separator layoutX="469.0" layoutY="90.0" orientation="VERTICAL" prefHeight="461.0" prefWidth="14.0" />
+        <VBox layoutX="547.0" layoutY="113.0" prefHeight="378.0" prefWidth="290.0" spacing="15.0">
+            <children>
+            <Label text="Statut Juridique">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="statutJuridiqueChoiceBox" prefHeight="26.0" prefWidth="170.0" />
+            <Label text="Prix initial">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+                <TextField fx:id="prixInitialTextField" promptText="20 000 000 (DA)" />
+            <ToggleButton fx:id="negciableToggleButton" mnemonicParsing="false" text="Negociable" />
+            <Label text="Description du bien">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+                <TextArea fx:id="descriptionTextArea" prefHeight="134.0" prefWidth="290.0" promptText="Description du bien" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

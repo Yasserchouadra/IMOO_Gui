@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="510.0" layoutY="343.0" mnemonicParsing="false" onAction="#GoBACKADMENU" text="GO BACK" />
+      <Button layoutX="50.0" layoutY="343.0" mnemonicParsing="false" onAction="#quitter" text="QUITTER" />
+      <VBox layoutX="220.0" layoutY="90.0" prefHeight="241.0" prefWidth="131.0" spacing="40.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GoAjouterBien" prefHeight="25.0" prefWidth="138.0" text="AJOUTER BIEN" />
+            <Button mnemonicParsing="false" text="SUPPRIMER UN  BIEN" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" text="ARCHIVER UN BIEN" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" text="MODIFIER UN BIEN" />
+         </children>
+      </VBox>
+      <Text layoutX="177.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENUE DANS LA GESTION DE BIENS" />
+   </children>
+</AnchorPane>

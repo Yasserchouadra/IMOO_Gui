@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutY="32.0" prefHeight="38.0" prefWidth="1318.0" style="-fx-background-color: #F9C784;">
+         <children>
+            <Text layoutX="86.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU PUBLIQUE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <VBox layoutY="70.0" prefHeight="611.0" prefWidth="200.0" spacing="2.0" style="-fx-background-color: #F9C784;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#AfficheAnnonceButtonPushed" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #577280;" text="Afficher annonces" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#GoAfficherWilayas" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #577280;" text="Afficher wilaya/prix m²" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="103.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" onAction="#afficherPropButtonPushed" style="-fx-background-color: #577280;" text="Afficher Propriétaire" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#GoMessage" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #577280;" text="Envoyer Message" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <ToolBar layoutX="5.0" layoutY="680.0" prefHeight="40.0" prefWidth="1313.0">
+         <items>
+            <Button mnemonicParsing="false" onAction="#GoBACK" prefHeight="19.0" prefWidth="123.0" text="Go BACK." />
+            <Button mnemonicParsing="false" onAction="#quitter" prefHeight="19.0" prefWidth="116.0" text="QUITTER" />
+         </items>
+      </ToolBar>
+      <ImageView fitHeight="50.0" fitWidth="61.0" layoutX="10.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pubIcon" fitHeight="40.0" fitWidth="43.0" layoutX="28.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+      <SubScene fx:id="mainSubScene" height="611.0" layoutX="200.0" layoutY="71.0" width="1118.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+   </children>
+</AnchorPane>

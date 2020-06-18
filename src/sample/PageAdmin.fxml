@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ToolBar layoutY="680.0" prefHeight="40.0" prefWidth="1280.0">
+         <items>
+            <Button mnemonicParsing="false" onAction="#quitter" prefHeight="21.0" prefWidth="116.0" text="QUITTER" />
+            <Button mnemonicParsing="false" onAction="#GoBACK" prefHeight="6.0" prefWidth="123.0" text=" &lt;   Go BACK." />
+         </items>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </ToolBar>
+      <VBox layoutX="528.0" layoutY="204.0" prefHeight="247.0" prefWidth="150.0" spacing="30.0">
+         <children>
+            <ImageView fx:id="lockIcon" fitHeight="96.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="IDENTIFICATION" textAlignment="CENTER" wrappingWidth="223.33673095703125" />
+            <TextField fx:id="username" prefHeight="26.0" prefWidth="262.0" promptText="username" />
+            <PasswordField fx:id="passwd" promptText="passwd" />
+            <Button fx:id="connectButton" mnemonicParsing="false" onAction="#OnSubit" prefHeight="26.0" prefWidth="100.0" style=" -fx-background-radius: 50;" text="Connect">
+               <VBox.margin>
+                  <Insets left="63.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

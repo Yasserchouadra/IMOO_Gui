@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AfficherPropsController">
+   <children>
+      <Label layoutX="14.0" layoutY="20.0" style="-fx-font-family: 'Open Sans Light'" text="Propriétaires">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="20.0" style="-fx-font-family: 'Open Sans Light'" text="Biens">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <HBox layoutX="1.0" layoutY="58.0" prefHeight="562.0" prefWidth="955.0">
+         <children>
+            <ListView fx:id="proprietairesListView" prefHeight="562.0" prefWidth="411.0" />
+            <ListView fx:id="biensPropListView" prefHeight="562.0" prefWidth="350.0" />
+            <VBox prefHeight="560.0" prefWidth="280.0" spacing="5.0">
+               <padding>
+                  <Insets left="20.0" top="40.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="24.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="TypeBien :">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="typeBienLabel" text="typeBienLabel">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Transaction :" />
+                        <Label fx:id="transactionLabel" text="transactionLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="19.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Date d'ajout : " />
+                        <Label fx:id="dateLabel" text="dateLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="18.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Adresse : " />
+                        <Label fx:id="adresseLabel" text="adresseLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="19.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Wilaya :" />
+                        <Label fx:id="wilayaLabel" text="wilayaLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Superficie :" />
+                        <Label fx:id="superficieLabel" text="superficieLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Simplexe :" />
+                        <Label fx:id="simplexeLabel" text="simplexeLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Nombre de chambres : " />
+                        <Label fx:id="nbchambesLabel" text="nbchambesLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Meublé :" />
+                        <Label fx:id="meubleLabel" text="meubleLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Jardin :" />
+                        <Label fx:id="jardinLabel" text="jardinLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Garage :" />
+                        <Label fx:id="garageLabel" text="garageLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Prix :" textFill="#cd860d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="prixLabel" text="prixLabel" textFill="#cd860d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Negociable :" />
+                        <Label fx:id="negoLabel" text="negoLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="260.0" spacing="10.0">
+                     <children>
+                        <Label text="Bien de" />
+                        <Label fx:id="propLabel" text="propLabel" />
+                     </children>
+                  </HBox>
+                  <Label />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="692.0" layoutY="20.0" style="-fx-font-family: 'Open Sans Light'" text="Détails">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

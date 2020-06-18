@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutX="38.0" layoutY="123.0" prefHeight="260.0" prefWidth="523.0" spacing="20.0">
+         <children>
+            <TextField fx:id="senderName" prefHeight="26.0" prefWidth="362.0" promptText="Nom et prénom" />
+            <TextField fx:id="email" promptText="E-mail" />
+            <TextArea fx:id="textMessage" prefHeight="110.0" prefWidth="523.0" promptText="Votre message ici" />
+            <HBox prefHeight="19.0" prefWidth="523.0" spacing="30.0">
+               <children>
+                  <Button alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#EnvoyerMessage" text="Envoyer" />
+                  <Label fx:id="successMessageLabel" alignment="CENTER" contentDisplay="RIGHT" text="successMessage" textAlignment="CENTER" textFill="#57ff15">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane layoutY="26.0" prefHeight="66.0" prefWidth="611.0" style="-fx-background-color: #577280;">
+         <children>
+            <Text fill="WHITE" layoutX="125.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envoyer un  Message">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="mailImView" fitHeight="59.0" fitWidth="65.0" layoutX="35.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <ToolBar layoutY="380.0" prefHeight="36.0" prefWidth="611.0" />
+   </children>
+</AnchorPane>
